@@ -2,6 +2,7 @@
 <p align="center">
 <em>A full-stack web application designed to simplify the process of obtaining a driving license in India. This project, based on research from my 5th semester, provides a one-stop solution with an informational hub and an interactive practice quiz.</em>
 </p>
+
 # 📸 Screenshots
 <p align="center">
 
