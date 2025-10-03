@@ -12,19 +12,11 @@
 
 # 📸 Screenshots
 <p align="center">
-<strong>Homepage and Information Hub</strong>
-
-
-
 
 <img width="90%" alt="Screenshot of the LicenseLane homepage and information section" src="https://github.com/user-attachments/assets/817fc957-74f1-4a7c-b985-c50e7ca216f0">
 </p>
 
 <p align="center">
-<strong>Interactive Practice Quiz</strong>
-
-
-
 
 <img width="90%" alt="Screenshot of the interactive practice quiz in action" src="https://github.com/user-attachments/assets/acc7c984-848d-4172-84a7-f6f4dd2f8cf4">
 </p>
@@ -39,23 +31,23 @@
 🌐 API-Driven Quiz: The quiz dynamically fetches questions from a back-end API, checks user answers, and provides instant feedback, demonstrating a clear separation between the front-end and back-end.
 
 # 🛠️ Technology Stack
-Back-End:
+-> Back-End:
 
-Language: Python
+- Language: Python
 
-Framework: Flask (for serving pages and creating APIs)
+- Framework: Flask (for serving pages and creating APIs)
 
-Front-End:
+-> Front-End:
 
-Structure: HTML5
+- Structure: HTML5
 
-Styling: Tailwind CSS (for rapid, modern UI design)
+- Styling: Tailwind CSS (for rapid, modern UI design)
 
-Interactivity: Vanilla JavaScript (for API communication in the quiz)
+- Interactivity: Vanilla JavaScript (for API communication in the quiz)
 
-Data Format:
+- Data Format:
 
-JSON: For storing and managing the quiz questions and answers.
+- JSON: For storing and managing the quiz questions and answers.
 
 # 🚀 Setup and Installation
 To run this project on your local machine, please follow these steps:
