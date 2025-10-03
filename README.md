@@ -1,4 +1,4 @@
-LicenseLane: Your Roadmap to Driving Licenses 🚗
+#LicenseLane: Your Roadmap to Driving Licenses 🚗
 <p align="center">
 <em>A full-stack web application designed to simplify the process of obtaining a driving license in India. This project, based on research from my 5th semester, provides a one-stop solution with an informational hub and an interactive practice quiz.</em>
 </p>
@@ -8,7 +8,7 @@ LicenseLane: Your Roadmap to Driving Licenses 🚗
 <!-- Example: <img src="demo.gif" width="700" /> -->
 </p>
 
-Core Features
+#Core Features
 📖 Comprehensive Information Hub: A clean, multi-page section providing detailed, step-by-step guides on the process, eligibility, and required documents for both Learner's and Permanent driving licenses.
 
 🧠 Interactive Practice Quiz: A dynamic quiz with questions and images related to Indian road signs and traffic rules. The options are lettered (A, B, C, D) to simulate a real test environment.
@@ -36,38 +36,6 @@ Data Format:
 
 JSON: For storing and managing the quiz questions and answers.
 
-Setup and Installation
-To run this project on your local machine, please follow these steps:
-
-Clone the Repository
-
-git clone [https://github.com/your-username/LicenseLane-Project.git](https://github.com/your-username/LicenseLane-Project.git)
-cd LicenseLane-Project
-
-
-Create and Activate a Virtual Environment
-
-# Create the environment
-python -m venv venv
-
-# Activate on Windows
-.\venv\Scripts\activate
-
-
-Install the Required Dependencies
-The requirements.txt file contains all the necessary Python libraries.
-
-pip install -r requirements.txt
-
-
-Run the Application
-This will start the Flask development server.
-
-python app.py
-
-
-View the Website
-Open your web browser and navigate to the address shown in the terminal (usually http://127.0.0.1:5000).
 
 Project Structure
 The project is organized with a standard Flask application structure, separating the back-end logic, front-end templates, and static assets.
