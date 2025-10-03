@@ -1,12 +1,5 @@
 # LicenseLane: Your Roadmap to Driving Licenses 🚗
 <p align="center">
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python Badge"/>
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Flask-000000%3Fstyle%3Dfor-the-badge%26logo%3Dflask%26logoColor%3Dwhite" alt="Flask Badge"/>
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/HTML5-E34F26%3Fstyle%3Dfor-the-badge%26logo%3Dhtml5%26logoColor%3Dwhite" alt="HTML5 Badge"/>
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Tailwind_CSS-38B2AC%3Fstyle%3Dfor-the-badge%26logo%3Dtailwind-css%26logoColor%3Dwhite" alt="Tailwind CSS Badge"/>
-</p>
-
-<p align="center">
 <em>A full-stack web application designed to simplify the process of obtaining a driving license in India. This project, based on research from my 5th semester, provides a one-stop solution with an informational hub and an interactive practice quiz.</em>
 </p>
 # 📸 Screenshots
