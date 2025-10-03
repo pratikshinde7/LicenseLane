@@ -1,4 +1,4 @@
-#LicenseLane: Your Roadmap to Driving Licenses 🚗
+<h1><center>LicenseLane: Your Roadmap to Driving Licenses 🚗</center></h1>
 <p align="center">
 <em>A full-stack web application designed to simplify the process of obtaining a driving license in India. This project, based on research from my 5th semester, provides a one-stop solution with an informational hub and an interactive practice quiz.</em>
 </p>
@@ -8,7 +8,7 @@
 <!-- Example: <img src="demo.gif" width="700" /> -->
 </p>
 
-#Core Features
+<h3>Core Features</h3>
 📖 Comprehensive Information Hub: A clean, multi-page section providing detailed, step-by-step guides on the process, eligibility, and required documents for both Learner's and Permanent driving licenses.
 
 🧠 Interactive Practice Quiz: A dynamic quiz with questions and images related to Indian road signs and traffic rules. The options are lettered (A, B, C, D) to simulate a real test environment.
