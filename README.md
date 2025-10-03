@@ -1,21 +1,35 @@
-LicenseLane: Your Roadmap to Driving Licenses 🚗
+# LicenseLane: Your Roadmap to Driving Licenses 🚗
 <p align="center">
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Flask-000000%3Fstyle%3Dfor-the-badge%26logo%3Dflask%26logoColor%3Dwhite" />
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/HTML5-E34F26%3Fstyle%3Dfor-the-badge%26logo%3Dhtml5%26logoColor%3Dwhite" />
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Tailwind_CSS-38B2AC%3Fstyle%3Dfor-the-badge%26logo%3Dtailwind-css%26logoColor%3Dwhite" />
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python Badge"/>
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Flask-000000%3Fstyle%3Dfor-the-badge%26logo%3Dflask%26logoColor%3Dwhite" alt="Flask Badge"/>
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/HTML5-E34F26%3Fstyle%3Dfor-the-badge%26logo%3Dhtml5%26logoColor%3Dwhite" alt="HTML5 Badge"/>
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Tailwind_CSS-38B2AC%3Fstyle%3Dfor-the-badge%26logo%3Dtailwind-css%26logoColor%3Dwhite" alt="Tailwind CSS Badge"/>
 </p>
 
 <p align="center">
 <em>A full-stack web application designed to simplify the process of obtaining a driving license in India. This project, based on research from my 5th semester, provides a one-stop solution with an informational hub and an interactive practice quiz.</em>
 </p>
 
-<img width="2879" height="1528" alt="image" src="https://github.com/user-attachments/assets/817fc957-74f1-4a7c-b985-c50e7ca216f0" />
+# 📸 Screenshots
+<p align="center">
+<strong>Homepage and Information Hub</strong>
 
-<img width="2879" height="1524" alt="image" src="https://github.com/user-attachments/assets/acc7c984-848d-4172-84a7-f6f4dd2f8cf4" />
 
 
-✨ Core Features
+
+<img width="90%" alt="Screenshot of the LicenseLane homepage and information section" src="https://github.com/user-attachments/assets/817fc957-74f1-4a7c-b985-c50e7ca216f0">
+</p>
+
+<p align="center">
+<strong>Interactive Practice Quiz</strong>
+
+
+
+
+<img width="90%" alt="Screenshot of the interactive practice quiz in action" src="https://github.com/user-attachments/assets/acc7c984-848d-4172-84a7-f6f4dd2f8cf4">
+</p>
+
+# ✨ Core Features
 📖 Comprehensive Information Hub: A clean, multi-page section providing detailed, step-by-step guides on the process, eligibility, and required documents for both Learner's and Permanent driving licenses.
 
 🧠 Interactive Practice Quiz: A dynamic quiz with questions and images related to Indian road signs and traffic rules. The options are lettered (A, B, C, D) to simulate a real test environment.
@@ -24,7 +38,7 @@ LicenseLane: Your Roadmap to Driving Licenses 🚗
 
 🌐 API-Driven Quiz: The quiz dynamically fetches questions from a back-end API, checks user answers, and provides instant feedback, demonstrating a clear separation between the front-end and back-end.
 
-🛠️ Technology Stack
+# 🛠️ Technology Stack
 Back-End:
 
 Language: Python
@@ -43,18 +57,29 @@ Data Format:
 
 JSON: For storing and managing the quiz questions and answers.
 
-📁 Project Structure
+# 🚀 Setup and Installation
+To run this project on your local machine, please follow these steps:
+
+1. Clone the Repository
+git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+cd your-repo-name
+
+2. Create and Activate a Virtual Environment
+python -m venv venv
+.\venv\Scripts\activate
+
+3. Install the Required Dependencies
+pip install -r requirements.txt
+
+4. Run the Application
+python app.py
+
+5. View the Website
+Open your web browser and navigate to the address.
+
+# 📁 Project Structure
 The project is organized with a standard Flask application structure, separating the back-end logic, front-end templates, and static assets.
 
 LicenseLane-Project/
-├── app.py              # The main Flask server and back-end logic
-├── quiz_data.json      # The database of quiz questions
-├── requirements.txt    # List of Python dependencies
-├── static/
-│   └── images/         # Folder for road sign images
-└── templates/
-    ├── index.html      # The main homepage
-    ├── info.html       # The information hub landing page
-    ├── learner.html    # Learner's License details
-    ├── permanent.html  # Permanent License details
-    └── quiz.html       # The interactive quiz page
+<img width="1412" height="601" alt="image" src="https://github.com/user-attachments/assets/30b96a7a-300e-43c7-99c8-c1e3235e82de" />
+
