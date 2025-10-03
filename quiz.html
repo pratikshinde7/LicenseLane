@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Quiz - LicenseLane</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .option-btn { transition: background-color 0.3s, transform 0.2s; text-align: left; }
+        .option-btn:hover { transform: translateY(-2px); }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <div class="bg-white w-full max-w-2xl p-8 rounded-xl shadow-lg">
+        <h1 class="text-2xl font-bold text-center mb-6">Driving License Practice Quiz</h1>
+        
+        <div id="quiz-container">
+            <img id="question-image" src="" alt="Question Image" class="mx-auto mb-4 rounded-lg hidden max-h-48">
+            <p id="question-text" class="text-xl text-center mb-6">Loading question...</p>
+            <div id="options-container" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Options will be inserted here by JavaScript -->
+            </div>
+        </div>
+
+        <div id="result-container" class="text-center mt-6">
+            <p id="result-text" class="text-2xl font-bold"></p>
+        </div>
+        
+        <div class="text-center mt-8">
+            <a href="/" class="text-blue-600 hover:underline">← Back to Home</a>
+        </div>
+    </div>
+
+    <script>
+        const questionText = document.getElementById('question-text');
+        const questionImage = document.getElementById('question-image');
+        const optionsContainer = document.getElementById('options-container');
+        const resultText = document.getElementById('result-text');
+        let currentQuestionId = null;
+
+        async function getQuestion() {
+            resultText.textContent = '';
+            optionsContainer.innerHTML = 'Loading...';
+            questionImage.classList.add('hidden');
+
+            const response = await fetch('/api/question');
+            const data = await response.json();
+            
+            currentQuestionId = data.id;
+            questionText.textContent = data.question;
+
+            if (data.image) {
+                questionImage.src = data.image;
+                questionImage.classList.remove('hidden');
+            }
+
+            optionsContainer.innerHTML = '';
+            const optionLabels = ['A', 'B', 'C', 'D']; // Labels for the options
+
+            data.options.forEach((option, index) => {
+                const button = document.createElement('button');
+                // Add A, B, C, D labels to the options
+                button.textContent = `${optionLabels[index]}. ${option}`;
+                button.className = 'option-btn bg-gray-200 hover:bg-blue-200 text-gray-800 font-semibold py-3 px-4 rounded-lg shadow';
+                
+                // We send the original option text (without the A/B/C) to be checked
+                button.onclick = () => checkAnswer(option); 
+                optionsContainer.appendChild(button);
+            });
+        }
+
+        async function checkAnswer(selectedOption) {
+            const response = await fetch('/api/check_answer', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    question_id: currentQuestionId,
+                    selected_answer: selectedOption
+                })
+            });
+            const data = await response.json();
+
+            if (data.correct) {
+                resultText.textContent = 'Correct!';
+                resultText.className = 'text-2xl font-bold text-green-500';
+            } else {
+                resultText.textContent = `Wrong! The correct answer was: ${data.correct_answer}`;
+                resultText.className = 'text-2xl font-bold text-red-500';
+            }
+
+            // Load the next question after a 2-second delay
+            setTimeout(getQuestion, 2000);
+        }
+
+        // Load the first question when the page opens
+        document.addEventListener('DOMContentLoaded', getQuestion);
+    </script>
+</body>
+</html>
+

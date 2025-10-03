@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>License Information - LicenseLane</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .info-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .info-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-blue-600">LicenseLane 🚗</a>
+            <div>
+                <a href="/" class="text-gray-600 hover:text-blue-600 px-3 py-2">Home</a>
+                <a href="/quiz" class="text-gray-600 hover:text-blue-600 px-3 py-2">Practice Quiz</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <section class="text-center">
+            <h2 class="text-4xl font-bold mb-4">Driving License Information Hub</h2>
+            <p class="text-lg text-gray-600 mb-8">Select a license type to view the detailed process, required documents, and eligibility.</p>
+        </section>
+
+        <section class="grid md:grid-cols-2 gap-8 mt-12">
+            <!-- Learner's License Card -->
+            <a href="/learner" class="block">
+                <div class="bg-white p-8 rounded-lg shadow-md h-full info-card">
+                    <h3 class="text-2xl font-bold mb-3 text-blue-600">Learner's License (LL)</h3>
+                    <p class="text-gray-600">The first step for any new driver. Learn about the application process, the initial test, and the documents you'll need to get started.</p>
+                </div>
+            </a>
+            <!-- Permanent License Card -->
+            <a href="/permanent" class="block">
+                <div class="bg-white p-8 rounded-lg shadow-md h-full info-card">
+                    <h3 class="text-2xl font-bold mb-3 text-blue-600">Permanent License (DL)</h3>
+                    <p class="text-gray-600">Ready for the final step? Get information on the permanent driving test, vehicle requirements, and how to convert your LL to a full DL.</p>
+                </div>
+            </a>
+        </section>
+         <div class="text-center mt-16">
+            <a href="/" class="text-blue-600 hover:underline">← Back to Home</a>
+        </div>
+    </main>
+
+</body>
+</html>

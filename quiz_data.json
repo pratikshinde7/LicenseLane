@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "question": "What does this road sign mean?",
+        "image": "/static/images/stop_sign.jpg",
+        "options": ["Stop", "No Entry", "Give Way", "Speed Limit"],
+        "answer": "Stop"
+    },
+    {
+        "id": 2,
+        "question": "When is it permissible to use a horn in a residential area?",
+        "image": null,
+        "options": ["At any time", "Only to greet friends", "Only to prevent danger", "Never"],
+        "answer": "Only to prevent danger"
+    },
+    {
+        "id": 3,
+        "question": "What is the meaning of a continuous yellow line in the middle of the road?",
+        "image": null,
+        "options": ["You may overtake", "You must stop", "You may not cross the line", "Parking is allowed"],
+        "answer": "You may not cross the line"
+    },
+    {
+        "id": 4,
+        "question": "This sign represents...",
+        "image": "/static/images/no_parking_sign.jpg",
+        "options": ["Parking Ahead", "No Parking", "Hospital Nearby", "End of Speed Limit"],
+        "answer": "No Parking"
+    },
+    {
+        "id": 5,
+        "question": "Before overtaking a vehicle, you should ensure that...",
+        "image": null,
+        "options": ["The road ahead is clear", "You are not in a no-overtaking zone", "The driver ahead has signaled for you to pass", "Both A and B"],
+        "answer": "Both A and B"
+    }
+]
+
