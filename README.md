@@ -1,14 +1,21 @@
-<h1><center>LicenseLane: Your Roadmap to Driving Licenses 🚗</center></h1>
+LicenseLane: Your Roadmap to Driving Licenses 🚗
+<p align="center">
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Flask-000000%3Fstyle%3Dfor-the-badge%26logo%3Dflask%26logoColor%3Dwhite" />
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/HTML5-E34F26%3Fstyle%3Dfor-the-badge%26logo%3Dhtml5%26logoColor%3Dwhite" />
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Tailwind_CSS-38B2AC%3Fstyle%3Dfor-the-badge%26logo%3Dtailwind-css%26logoColor%3Dwhite" />
+</p>
+
 <p align="center">
 <em>A full-stack web application designed to simplify the process of obtaining a driving license in India. This project, based on research from my 5th semester, provides a one-stop solution with an informational hub and an interactive practice quiz.</em>
 </p>
 
-<p align="center">
-<!-- It's highly recommended to add a screenshot or a short GIF of the project in action here! -->
-<!-- Example: <img src="demo.gif" width="700" /> -->
-</p>
+<img width="2879" height="1528" alt="image" src="https://github.com/user-attachments/assets/817fc957-74f1-4a7c-b985-c50e7ca216f0" />
 
-<h3>Core Features</h3>
+<img width="2879" height="1524" alt="image" src="https://github.com/user-attachments/assets/acc7c984-848d-4172-84a7-f6f4dd2f8cf4" />
+
+
+✨ Core Features
 📖 Comprehensive Information Hub: A clean, multi-page section providing detailed, step-by-step guides on the process, eligibility, and required documents for both Learner's and Permanent driving licenses.
 
 🧠 Interactive Practice Quiz: A dynamic quiz with questions and images related to Indian road signs and traffic rules. The options are lettered (A, B, C, D) to simulate a real test environment.
@@ -17,7 +24,7 @@
 
 🌐 API-Driven Quiz: The quiz dynamically fetches questions from a back-end API, checks user answers, and provides instant feedback, demonstrating a clear separation between the front-end and back-end.
 
-Technology Stack
+🛠️ Technology Stack
 Back-End:
 
 Language: Python
@@ -36,8 +43,7 @@ Data Format:
 
 JSON: For storing and managing the quiz questions and answers.
 
-
-Project Structure
+📁 Project Structure
 The project is organized with a standard Flask application structure, separating the back-end logic, front-end templates, and static assets.
 
 LicenseLane-Project/
