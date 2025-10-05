@@ -15,4 +15,4 @@ For many citizens, navigating the bureaucratic procedures of government portals 
 - **Step-by-Step Application Guidance:** A simplified wizard to guide users through the entire application process.
 - **Digital Document Wallet:** A secure place for users to upload and manage all required documents.
 - **RTO Mock Test Simulator:** An interactive module to help users prepare for the Learner's License exam.
-- **Real-time Status Tracking:** A dashboard to monitor the status of an application.
+- **Real-time Status Tracking:** A dashboard to monitor the status of an application. 
